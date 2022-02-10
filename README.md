@@ -181,7 +181,7 @@ The function `rasterize_point()` is responsible for actually drawing the point. 
 - `(target_w, target_h)` corresponds to the bottom-right of the output image
 - **Please assume that screen sample positions are located at half-integer coordinates in screen space. That is, the top-left sample point is at coordinate (0.5, 0.5), and the bottom-right sample point is at coordinate (target_w-0.5, target_h-0.5).**
 
-![Sample locations](misc/coord_1spp.png?raw=true)
+![Sample locations](misc/coord_1spp.png)
 
 To rasterize points, we adopt the following rule: a point covers at most one screen sample: the closest sample to the point in screen space. This is implemented as follows, assuming (x, y) is the screen-space location of a point.
 
@@ -262,7 +262,7 @@ Note that the vertices may be in counter-clockwise or clockwise order when passe
 
 In this task, you will extend your rasterizer to anti-alias triangle edges via supersampling. In response to the user changing the screen sampling rate (the = and - keys), the application will call `set_sample_rate()` . The parameter `sample_rate` defines the sampling rate in each dimension, so a value of 2 would correspond to a sample density of 4 samples per pixel. In this case, the samples lying within the top-left pixel of the screen would be located at locations (0.25, 0.25), (0.75, 0.25), (0.25, 0.75), and (0.75, 0.75).
 
-![Sample locations](misc/coord_4spp.png?raw=true)
+![Sample locations](misc/coord_4spp.png)
 
 It's reasonable to think of supersampled rendering as rendering an image that is sample_rate times larger than the actual output image in each dimension, then resampling the larger rendered output down to the screen sampling rate after rendering is complete. If you take a look at the picture at the start of the “Getting Acquainted with the Starter Code” section, you can get an idea of the structure you should be aiming for. Previously, you might have been going straight to `render_target` to rasterize your lines and triangles, but now you should try to add an intermediate in order to support supersampling. **Note: If you implemented your triangle rasterizer in terms of sampling coverage in screen-space coordinates (and not in terms of pixels), then the code changes to support supersampling should be fairly simple for triangles.**
 
