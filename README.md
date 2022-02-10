@@ -6,10 +6,10 @@ In this project, you will implement a simple software rasterizer that draws poin
 
 ## Getting started
 
-We will be distributing assignments with git. You can find the repository for this assignment at https://github.com/CMU-Graphics/DrawSVG. If you are unfamiliar with git, here is what you need to do to get the starter code:
+We will be distributing assignments with git. You can find the repository for this assignment at http://dalab.se.sjtu.edu.cn/gitlab/courses/drawsvg. If you are unfamiliar with git, here is what you need to do to get the starter code:
 
 ```
-$ git clone https://github.com/CMU-Graphics/DrawSVG.git
+$ git clone http://dalab.se.sjtu.edu.cn/gitlab/courses/drawsvg.git
 ```
 
 This will create a folder with all the source files.
@@ -135,9 +135,9 @@ The assignment is divided into nine major tasks, which are described below in th
 
 ### Grading
 
-DrawSVG is made by humans, and will be graded by humans. We are not asking for a pixel-perfect recreation of the reference solution. Floating-point arithmetic on different architectures may lead to subtle inconsistencies that may make your solution a few pixels different than the reference. You should instead aim to have the bigger picture down: lines are in the general same area and thickness, no gaps in triangle fills, etc. It should be clear that if we held the two images together side by side, there shouldn't be a difference to the human eye (we're looking for eye-level differences, not pixel level differences). If you are unsure about grading, feel free to ask on piazza.
+DrawSVG is made by humans, and will be graded by humans. We are not asking for a pixel-perfect recreation of the reference solution. Floating-point arithmetic on different architectures may lead to subtle inconsistencies that may make your solution a few pixels different than the reference. You should instead aim to have the bigger picture down: lines are in the general same area and thickness, no gaps in triangle fills, etc. It should be clear that if we held the two images together side by side, there shouldn't be a difference to the human eye (we're looking for eye-level differences, not pixel level differences). If you are unsure about grading, feel free to ask on Canvas.
 
-Please make sure that your submission builds when submitting to Autolab. Check the assignment details on the course website for instructions on how to tar your files. We will run an autograding script to make sure you've included all the necessary filles and to ensure your program complies on the Gates 5 machines. If you receive a negative score, Autolab will provide you feedback on what you need to fix in your program before submitting. You have unlimited submissions.
+Please make sure that your submission builds when submitting to Canvas. Check the assignment details on the course website for instructions on how to tar your files. We will run an autograding script to make sure you've included all the necessary filles and to ensure your program complies on the Gates 5 machines. If you receive a negative score, Canvas will provide you feedback on what you need to fix in your program before submitting. You have unlimited submissions.
 
 ### Friendly Advice from your TAs
 
