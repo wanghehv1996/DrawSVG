@@ -66,11 +66,11 @@ If you feel that your program is running slowly, you can also change the build m
 
 Open CLion, then do `File -> Import Project..`
 
-Choose the `Visual Studio` as the Default toolchain in `File -> Settings -> Build, Execution, Deployment -> Toolchains`, and make sure `Architecture` is correct
-
 In the popped out window, find and select the project folder `...\DrawSVG`, click OK, click Open Existing Project, then select New Window
 
 Make sure the drop down menu on top right has drawsvg selected (it should say `drawsvg | Debug`). Then open the drop down menu again and go to Edit Configurations..
+
+Open `File -> Settings -> Build, Execution, Deployment -> Toolchains`, then choose `Visual Studio` as the Default toolchain, and make sure `Architecture` is correct
 
 Open `Run -> Edit Configureations -> CMake Application -> drawsvg`, fill `Program arguments` as `.\svg\basic` and `Working diretory` as `MyDir\drawsvg`, then apply and close the popup.
 
