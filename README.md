@@ -52,7 +52,7 @@ $ make
 
 These steps (1) create an out-of-source build directory, (2) configure the project using CMake, and (3) compile the project. If all goes well, you should see an executable `drawsvg` in the build directory. As you work, simply typing `make` in the build directory will recompile the project.
 
-#### Windows Build Instructions using Visual Studio
+#### Windows Build Instructions using Visual Studio (Recommended)
 
 We have a beta build support for Windows systems. You need to install the latest version of [CMake](http://www.cmake.org/) and install [Visual Studio Community](https://visualstudio.microsoft.com/vs/). After installing these programs, you can run `runcmake_win.bat` by double-clicking on it. This should create a `build` directory with a Visual Studio solution file in it named `drawsvg.sln`. You can double-click this file to open the solution in Visual Studio.
 
@@ -60,19 +60,21 @@ If you plan on using Visual Studio to debug your program, you can change `drawsv
 
 If you feel that your program is running slowly, you can also change the build mode to `Release` from `Debug` by clicking the Solution Configurations drop down menu on the top menu bar. Note that you will have to set `Command Arguments` again if you change the build mode.
 
-<!-- #### Windows Build Instructions Using CLion
+#### Windows Build Instructions Using CLion+Visual Studio
 
-(tested on CLion 2018.3)
+(tested on CLion 2021.1.2+Visual Studio 2019)
 
 Open CLion, then do `File -> Import Project..`
+
+Choose the `Visual Studio` as the Default toolchain in `File -> Settings -> Build, Execution, Deployment -> Toolchains`, and make sure `Architecture` is correct
 
 In the popped out window, find and select the project folder `...\DrawSVG`, click OK, click Open Existing Project, then select New Window
 
 Make sure the drop down menu on top right has drawsvg selected (it should say `drawsvg | Debug`). Then open the drop down menu again and go to Edit Configurations..
 
-Fill in Program arguments, say, `./svg/basic`, then click Apply and close the popup
+Open `Run -> Edit Configureations -> CMake Application -> drawsvg`, fill `Program arguments` as `.\svg\basic` and `Working diretory` as `MyDir\drawsvg`, then apply and close the popup.
 
-Now you should be able to click on the green run button on top right to run the project. -->
+Now you should be able to click on the green run button on top right to run the project.
 
 ### Using the Mini-SVG Viewer App
 
