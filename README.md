@@ -18,6 +18,10 @@ This will create a folder with all the source files.
 
 In order to ease the process of running on different platforms, we will be using [CMake](http://www.cmake.org/) for our assignments. You will need a CMake installation of version 2.8+ to build the code for this assignment. It should also be relatively easy to build the assignment and work locally on Windows, OSX or 64-bit version of Linux. Building on ARM (e.g. Raspberry Pi, some Chromebooks) is currently not supported.
 
+Once you build the project, you should see the following GUI when runninng `./drawsvg ../../svg/basic`.
+
+![GUI](misc/drawsvg_gui.png)
+
 <!-- #### VSCode Build Instructions (All Platforms) [Untest!!]
 
 We recommend using [Visual Studio Code](https://code.visualstudio.com/download) on all platforms. Once you install CMake and VSCode, you will also need to install the C/C++ extension within VSCode.
@@ -55,6 +59,8 @@ These steps (1) create an out-of-source build directory, (2) configure the proje
 #### Windows Build Instructions using Visual Studio (Recommended)
 
 We have a beta build support for Windows systems. You need to install the latest version of [CMake](http://www.cmake.org/) and install [Visual Studio Community](https://visualstudio.microsoft.com/vs/). After installing these programs, you can run `runcmake_win.bat` by double-clicking on it. This should create a `build` directory with a Visual Studio solution file in it named `drawsvg.sln`. You can double-click this file to open the solution in Visual Studio.
+
+You may need to modify the Visual Studio path in `runcmake_win.bat` if you are using Visual Studio 2022.
 
 If you plan on using Visual Studio to debug your program, you can change `drawsvg` project in the Solution Explorer as the startup project by right-clicking on it and selecting `Set as StartUp Project`. You can also set the commandline arguments to the project by right-clicking `drawsvg` project again, selecting `Properties`, going into the `Debugging` tab, and setting the value in `Command Arguments`. If you want to run the program with the basic svg folder, you can set this command argument to `../../svg/basic`. After setting all these, you can hit F5 to build your program and run it with the debugger.
 
