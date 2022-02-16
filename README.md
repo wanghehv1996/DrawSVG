@@ -28,7 +28,7 @@ We recommend using [Visual Studio Code](https://code.visualstudio.com/download) 
 
 The build and launch data is contained within the `.vscode` directory. Select the folder for your compiler and move `launch.json` and `tasks.json` up one level into the `.vscode` directory. To set commandline arguments, go to `launch.json` and add them within `args`. For example, to run the program with test 1, you would add `./basic/test1.svg`. You can build using <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> and debug using <kbd>F5</kbd>. If you feel that your program is running slowly, you can also change the build mode to `Release` from `Debug`. -->
 
-Commonly used Hotkeys:
+<!-- Commonly used Hotkeys:
 
 - <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> - Build
 - <kbd>F5</kbd> - Debug
@@ -38,7 +38,7 @@ Commonly used Hotkeys:
   - <kbd>Shift</kbd>+<kbd>F5</kbd> - Stop
 - <kbd>Ctrl</kbd>+<kbd>P</kbd> - Search for file
 - <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> - Run Command
-- Right click to go to definition/declaration/references
+- Right click to go to definition/declaration/references -->
 
 #### OS X/Linux Build Instructions
 
