@@ -99,7 +99,7 @@ class Vector4D {
 
   // addition / assignment
   inline void operator+=( const Vector4D& v ) {
-    x += v.x; y += v.y; z += v.z; z += v.w;
+    x += v.x; y += v.y; z += v.z; w += v.w;
   }
 
   // subtraction / assignment
